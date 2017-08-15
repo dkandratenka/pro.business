@@ -2,10 +2,6 @@ package com.pb.rest;
 
 import com.pb.rest.model.Product;
 
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonObject;
-import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -26,6 +22,7 @@ public class ProductService {
         return new ArrayList<Product>(){{
             add(new Product("dima", 23));
             add(new Product("vlad", 9));
+            add(new Product("alla", 43));
         }};
     }
 
